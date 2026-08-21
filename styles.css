@@ -98,9 +98,12 @@ ul,ol{margin:0;padding:0;list-style:none}
   backdrop-filter:blur(14px) saturate(1.6);border-bottom:1px solid var(--line)}
 .site-head__inner{display:flex;align-items:center;justify-content:space-between;
   gap:24px;height:66px}
-.brand{display:inline-flex;align-items:center;gap:10px;font-weight:600;
+.brand{display:inline-flex;align-items:center;gap:var(--mark-gap,10px);font-weight:600;
   letter-spacing:-.02em;font-size:1.0625rem}
-.brand__mark{height:26px;width:auto;flex:none}
+.brand__wm{font-family:var(--font-wm,var(--font-display));font-weight:400;
+  font-size:1.05rem;letter-spacing:.02em;color:var(--ink-3)}
+.brand__wm b{font-weight:600;letter-spacing:.08em;color:var(--ink)}
+.brand__mark{height:var(--mark-h,26px);width:auto;flex:none}
 .nav{display:flex;align-items:center;gap:30px}
 .nav a{font-size:.9375rem;color:var(--ink-2);transition:color .16s ease}
 .nav a:hover{color:var(--ink)}

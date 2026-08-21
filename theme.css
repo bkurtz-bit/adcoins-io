@@ -1,24 +1,26 @@
-/* AdCoins — theme tokens. Prepended to base.css by build.sh. */
+/* AdCoins — theme tokens. Prepended to base.css by build.sh.
+   Palette taken from the logo: the yellow end of its own yellow→orange→red
+   ramp, which keeps it distinct from yfuel sitting at the red end. */
 :root{
-  --ink:#08131A;
-  --ink-2:#3A4B55;
-  --ink-3:#67787F;
-  --line:#E1E8EB;
-  --line-strong:#CBD6DA;
+  --ink:#17150F;
+  --ink-2:#4C463C;
+  --ink-3:#7A7266;
+  --line:#E7E1D6;
+  --line-strong:#D5CCBC;
   --bg:#FFFFFF;
-  --bg-2:#F4F8F9;
-  --bg-dark:#061219;
+  --bg-2:#FBF8F2;
+  --bg-dark:#17150F;
 
-  --accent:#0E8F87;
-  --accent-hi:#0B7A73;
-  --accent-deep:#075B56;
-  --accent-lo:#4FD9CF;
-  --accent-soft:#E4F5F3;
+  --accent:#E07A18;
+  --accent-hi:#C4670F;
+  --accent-deep:#8F4A08;
+  --accent-lo:#FFC20E;
+  --accent-soft:#FDF0DC;
   --accent-ink:#FFFFFF;
 
   --radius:14px;
   --radius-sm:9px;
-  --shadow:0 12px 32px -18px rgba(8,19,26,.3);
+  --shadow:0 12px 32px -18px rgba(23,21,15,.32);
   --maxw:1160px;
 
   --font-display:"Sora","Inter",system-ui,sans-serif;

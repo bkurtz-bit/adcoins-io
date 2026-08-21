@@ -2,27 +2,29 @@
    Source: adcoins-io/theme.css + _shared/base.css
    Rebuild with: node build.js adcoins-io
 */
-/* AdCoins — theme tokens. Prepended to base.css by build.sh. */
+/* AdCoins — theme tokens. Prepended to base.css by build.sh.
+   Palette taken from the logo: the yellow end of its own yellow→orange→red
+   ramp, which keeps it distinct from yfuel sitting at the red end. */
 :root{
-  --ink:#08131A;
-  --ink-2:#3A4B55;
-  --ink-3:#67787F;
-  --line:#E1E8EB;
-  --line-strong:#CBD6DA;
+  --ink:#17150F;
+  --ink-2:#4C463C;
+  --ink-3:#7A7266;
+  --line:#E7E1D6;
+  --line-strong:#D5CCBC;
   --bg:#FFFFFF;
-  --bg-2:#F4F8F9;
-  --bg-dark:#061219;
+  --bg-2:#FBF8F2;
+  --bg-dark:#17150F;
 
-  --accent:#0E8F87;
-  --accent-hi:#0B7A73;
-  --accent-deep:#075B56;
-  --accent-lo:#4FD9CF;
-  --accent-soft:#E4F5F3;
+  --accent:#E07A18;
+  --accent-hi:#C4670F;
+  --accent-deep:#8F4A08;
+  --accent-lo:#FFC20E;
+  --accent-soft:#FDF0DC;
   --accent-ink:#FFFFFF;
 
   --radius:14px;
   --radius-sm:9px;
-  --shadow:0 12px 32px -18px rgba(8,19,26,.3);
+  --shadow:0 12px 32px -18px rgba(23,21,15,.32);
   --maxw:1160px;
 
   --font-display:"Sora","Inter",system-ui,sans-serif;
@@ -98,7 +100,7 @@ ul,ol{margin:0;padding:0;list-style:none}
   gap:24px;height:66px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-weight:600;
   letter-spacing:-.02em;font-size:1.0625rem}
-.brand__mark{width:26px;height:26px;flex:none}
+.brand__mark{height:26px;width:auto;flex:none}
 .nav{display:flex;align-items:center;gap:30px}
 .nav a{font-size:.9375rem;color:var(--ink-2);transition:color .16s ease}
 .nav a:hover{color:var(--ink)}
@@ -164,12 +166,6 @@ ul,ol{margin:0;padding:0;list-style:none}
 
 .card--flat:hover{transform:none;box-shadow:none;border-color:var(--line)}
 
-/* brand cards (group site) */
-.brand-card{padding:clamp(28px,3.2vw,38px)}
-.brand-card__top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.brand-card__logo{font-size:1.5rem;letter-spacing:-.03em;font-weight:600}
-.brand-card__logo--yfuel{font-family:"Space Grotesk",var(--font-body);color:#E0491F}
-.brand-card__logo--adcoins{font-family:"Sora",var(--font-body);color:#0E8F87}
 
 /* feature row: sticky media beside scrolling copy */
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);

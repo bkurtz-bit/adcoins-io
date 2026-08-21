@@ -1,0 +1,28 @@
+/* AdCoins — theme tokens. Prepended to base.css by build.sh. */
+:root{
+  --ink:#08131A;
+  --ink-2:#3A4B55;
+  --ink-3:#67787F;
+  --line:#E1E8EB;
+  --line-strong:#CBD6DA;
+  --bg:#FFFFFF;
+  --bg-2:#F4F8F9;
+  --bg-dark:#061219;
+
+  --accent:#0E8F87;
+  --accent-hi:#0B7A73;
+  --accent-deep:#075B56;
+  --accent-lo:#4FD9CF;
+  --accent-soft:#E4F5F3;
+  --accent-ink:#FFFFFF;
+
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 12px 32px -18px rgba(8,19,26,.3);
+  --maxw:1160px;
+
+  --font-display:"Sora","Inter",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --display-weight:600;
+  --display-tracking:-.032em;
+}

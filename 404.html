@@ -13,26 +13,23 @@
    including deep ones, so it must not depend on a relative stylesheet. */
 *{box-sizing:border-box}
 body{margin:0;min-height:100dvh;display:grid;place-items:center;text-align:center;
-  background:#fff;color:#0A0E16;font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased;padding:24px}
+  background:#fff;color:#0A0E16;
+  font:17px/1.6 "Sora",Inter,sans-serif;-webkit-font-smoothing:antialiased;padding:24px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-weight:600;
   letter-spacing:-.02em;font-size:1.0625rem;color:inherit;text-decoration:none;margin-bottom:30px}
 .brand svg{width:26px;height:26px}
-h1{margin:0;font-family:"Sora",Inter,sans-serif;font-weight:600;letter-spacing:-.03em;line-height:1.1;
-  font-size:clamp(1.9rem,4.5vw,2.8rem)}
-p{margin:16px auto 0;max-width:44ch;color:#5A6272}
+h1{margin:0;font-family:"Sora",Inter,sans-serif;font-weight:600;letter-spacing:-.035em;line-height:1.05;
+  font-size:clamp(2rem,5.5vw,3.2rem)}
+p{margin:16px auto 0;max-width:44ch;opacity:.6}
 a.btn{display:inline-flex;align-items:center;gap:9px;margin-top:30px;padding:13px 22px;
-  border-radius:10px;background:#0E8F87;color:#fff;text-decoration:none;
-  font-size:.9375rem;font-weight:600}
+  border-radius:10px;background:#0E8F87;color:#fff;
+  text-decoration:none;font-size:.9375rem;font-weight:600}
 a.btn:hover{filter:brightness(.93)}
 </style>
 </head>
 <body>
 <main>
-  <a class="brand" href="/">
-    <svg viewBox="0 0 32 32" aria-hidden="true">
-      <rect width="32" height="32" rx="8" fill="#0E8F87"/><path d="M16 7a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 3.4a5.6 5.6 0 0 1 0 11.2 5.6 5.6 0 0 1 0-11.2Zm0 3.2a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8Z" fill="#fff"/>
-    </svg>
+  <a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0E8F87"/><path d="M16 7a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm0 3.4a5.6 5.6 0 0 1 0 11.2 5.6 5.6 0 0 1 0-11.2Zm0 3.2a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8Z" fill="#fff"/></svg>
     <span>AdCoins</span>
   </a>
   <h1>This page doesn’t exist.</h1>

@@ -59,6 +59,8 @@
      JSON POSTs. Until one is set the form falls back to a mailto: draft so the
      site is never a dead end.
   ------------------------------------------------------------------------- */
+  var fallbackTo = 'business@' + location.hostname.replace(/^www\./, '');
+
   document.querySelectorAll('form[data-contact]').forEach(function (form) {
     var status = form.querySelector('.form__status');
     var say = function (msg, ok) {
@@ -75,7 +77,7 @@
 
       var endpoint = form.dataset.endpoint;
       if (!endpoint) {
-        var to = form.dataset.mailto || 'business@bigideas.me';
+        var to = form.dataset.mailto || fallbackTo;
         var body = Object.keys(data).map(function (k) {
           return k.replace(/^\w/, function (c) { return c.toUpperCase(); }) + ': ' + data[k];
         }).join('\n');
@@ -100,7 +102,7 @@
         say('Thanks — we’ll come back to you within one business day.', true);
       }).catch(function () {
         say('Something went wrong. Email us directly at ' +
-            (form.dataset.mailto || 'business@bigideas.me') + '.', false);
+            (form.dataset.mailto || fallbackTo) + '.', false);
       }).finally(function () {
         if (btn) { btn.disabled = false; btn.textContent = label; }
       });
